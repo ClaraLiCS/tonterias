@@ -17,6 +17,8 @@
 import java.util.*;
 
 public class RamaRoulette {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_RED = "\u001B[31m";
     public static void main(String[] args) {
         String[] ramas = {"Computacion", "Ingenieria del Software", "Ingenieria de Computadores", "Tencologias de la Informacion", "Sistemas de la Informacion"};
         Scanner sc = new Scanner(System.in);
@@ -33,7 +35,7 @@ public class RamaRoulette {
         }
         int i = (int)(Math.random() * opciones.length);
         System.out.println();
-        System.out.println("Deberías elegir " + ramas[opciones[i]]);
+        System.out.println("Deberías elegir " + ANSI_RED + ramas[opciones[i]] + ANSI_RESET);
         sc.close();
     }
 }
