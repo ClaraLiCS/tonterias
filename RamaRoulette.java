@@ -20,7 +20,7 @@ public class RamaRoulette {
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_RED = "\u001B[31m";
     public static void main(String[] args) {
-        String[] ramas = {"Computacion", "Ingenieria del Software", "Ingenieria de Computadores", "Tencologias de la Informacion", "Sistemas de la Informacion"};
+        String[] ramas = {"Computacion", "Ingenieria del Software", "Ingenieria de Computadores", "Tecnologias de la Informacion", "Sistemas de la Informacion"};
         Scanner sc = new Scanner(System.in);
         for(int i = 0; i < 5; i++){
             System.out.println(i + " --> " + ramas[i]);
